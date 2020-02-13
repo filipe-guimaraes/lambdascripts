@@ -1,3 +1,6 @@
+#Create AMI's (and also snapshots) based on a given retention period. Tag the AMI's with a DeleteOn tag and the value is the 
+#day that the AMI will be deleted. This script also tag the created AMI's with the same tag that the EC2 instances have. It
+#allows you to have resources allocated by tag.
 import boto3
 import collections
 import datetime
